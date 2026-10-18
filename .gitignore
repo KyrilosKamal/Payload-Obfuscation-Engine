@@ -1,0 +1,27 @@
+# Build output. The binary is 12 MB and is rebuilt by `make build`.
+/bin/
+/poe
+
+# Local run output: artifacts and machine-readable reports the CLI writes.
+# These are generated per run and are not part of the project.
+/out.bin
+/report.json
+*.obf
+
+# NOTE: *.bin is deliberately NOT ignored. The hand-written fixtures in
+# testdata/ and internal/x86/testdata/ are committed on purpose: their .asm
+# source is the source of truth, `make fixtures` regenerates the .bin
+# byte-for-byte, and the test suite reads them.
+
+# Go test and profile output
+*.test
+*.prof
+coverage.out
+
+# Editor and OS noise
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
