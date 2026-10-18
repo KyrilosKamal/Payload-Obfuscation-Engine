@@ -1,3 +1,4 @@
+![poe: chained obfuscation stages, each scored against a 20-rule YARA suite](cover.jpg)
 # Payload Obfuscation Engine (`pobf`)
 
 A layered payload obfuscation engine written in Go, built around a YARA ruleset
